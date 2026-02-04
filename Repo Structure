@@ -1,0 +1,33 @@
+autopentest/
+├── README.md
+├── pyproject.toml
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+├── config/
+│   ├── scope.yaml
+│   ├── auth.yaml
+│   └── settings.yaml
+├── core/
+│   ├── __init__.py
+│   ├── engine.py          # Orchestrator
+│   ├── scope.py           # Scope enforcement
+│   ├── logger.py
+│   ├── context.py         # Shared attack context
+│   └── mitre.py
+├── modules/
+│   ├── discovery/
+│   │   └── http_probe.py
+│   ├── vuln/
+│   │   └── idor_scan.py
+│   ├── exploit/
+│   │   └── idor_validate.py
+│   └── reporting/
+│       └── markdown.py
+├── evidence/
+│   └── .gitkeep
+├── scripts/
+│   └── run.py
+└── tests/
+    └── test_scope.py
+

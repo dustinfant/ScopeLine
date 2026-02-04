@@ -1,0 +1,13 @@
+scope:
+  assets:
+    - example.com
+
+auth:
+  headers:
+    # Authorization: "Bearer eyJhbGciOi..."
+  cookies:
+    # sessionid: "abc123"
+
+options:
+  verify_ssl: false
+
