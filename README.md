@@ -1,31 +1,35 @@
-# Pentest Project
+# ScopeLine
 
-**Modular, scope-driven API penetration testing framework** focusing on identity, authorization, SSRF, and common vulnerabilities.
+**ScopeLine** is a modular, scope-driven, identity-aware penetration testing framework for web applications and APIs.  
+It focuses on authorization flaws, identity context, SSRF, IDOR, and attack path analysis, with clean Markdown reporting.
 
 ## Overview
 
-This tool provides a structured approach to web application and API security testing. It is:
+ScopeLine provides a structured approach to API and web security testing:
 
-- **Scope-driven**: Load assets from `scope.yaml` to define targets.
-- **Modular**: Separate discovery, vulnerability scanning, and reporting.
-- **Extensible**: Easily add new modules for additional checks.
+- **Scope-driven**: Targets are defined explicitly in `scope.yaml`
+- **Identity-aware**: Tests behavior across user roles and auth contexts
+- **Modular**: Discovery, vulnerability scanning, analysis, and reporting are cleanly separated
+- **Automation-friendly**: Designed for CI/CD and repeatable assessments
 
-### Key Features
+## Key Features
 
-- HTTP and OpenAPI discovery
+- HTTP service discovery and probing
+- OpenAPI endpoint discovery
 - Directory and endpoint enumeration
 - JWT and authentication header analysis
-- Privilege inference
-- IDOR and SSRF vulnerability detection
-- Markdown reporting of findings
+- Privilege inference and role comparison
+- IDOR and SSRF detection
+- Attack path analysis
+- Structured Markdown reporting
 
 ## Usage
 
-bash
-# Ensure PYTHONPATH includes current directory
+```bash
+# Ensure PYTHONPATH includes the project root
 export PYTHONPATH=.
 
-# Run full scan
+# Run full interactive scan
 python3 run.py
 
 # Run CI-style scan
