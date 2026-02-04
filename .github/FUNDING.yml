@@ -1,0 +1,14 @@
+# .github/FUNDING.yml
+# GitHub Sponsors setup for ScopeLine
+
+github:
+  - ScopeLine               # GitHub Sponsors account
+
+patreon:
+  - scopeline               # Patreon username or slug
+
+open_collective:
+  - scopeline-community     # Open Collective slug
+
+ko_fi:
+  - scopeline               # Ko-fi username
