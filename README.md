@@ -34,6 +34,3 @@ python3 run.py
 
 # Run CI-style scan
 python3 run.py --ci
-
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/dustinfant/ScopeLine)
-![GitHub stars](https://img.shields.io/github/stars/dustinfant/ScopeLine)
